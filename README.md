@@ -1,0 +1,2 @@
+# Double Mutable Borrow in Rust
+This repository demonstrates a common error in Rust related to mutable borrowing.  The code attempts to create two mutable references to the same variable, which is forbidden by Rust's borrow checker to prevent data races and other concurrency problems. The solution showcases how to refactor the code to avoid this error.  A common solution is to use interior mutability or to manage borrowing with more careful consideration of scope.
